@@ -1,4 +1,29 @@
+
 #include <stdio.h>
+
+/* sempre lembrar: if (numero % 2 == 0) {
+    printf("Par\n");
+} else {
+    printf("Impar\n");
+}
+
+SEMPRE LEMBRAR: 
+
+if (a == b)   // igual
+if (a != b)   // diferente
+if (a > b)    // maior
+if (a < b)    // menor
+if (a >= b)   // maior ou igual
+if (a <= b)   // menor ou igual
+
++  // soma
+-  // subtração
+*  // multiplicação
+/  // divisão
+%  // resto (muito importante)
+*/
+
+
 
 
 struct Curriculo {
