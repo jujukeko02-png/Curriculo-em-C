@@ -21,6 +21,29 @@ if (a <= b)   // menor ou igual
 *  // multiplicação
 /  // divisão
 %  // resto (muito importante)
+
+COMO SOMAR DENTRO DE IF SERIA MAIS OU MENOS ASSIM:
+int variavel1;
+int variavel2;
+int variavel3;
+int outravariavel;
+if (variavel1 + variavel2 + variavel3 >= outravariavel) {
+    printf("kkkkk");
+}
+
+
+COMO SOMAR FORA E SÓ PEGAR A SOMA NO IF:
+
+int variavel1;
+int variavel2;
+int variavel3;
+int outravariavel
+int soma;
+soma = variavel1 + variavel2 + variavel3;
+
+if (soma >= outravariavel) {
+    printf("akakakakak");
+}
 */
 
 
@@ -63,7 +86,7 @@ printf("Bem Vindo (a) ao Curriculo Por linguagem C,\nSe estiver pronto (a), digi
 printf("Digite sua senha de usuario:\n");
 scanf("%d",&usuario.senhaDigitada);
 if (usuario.senhaDigitada == usuario.senhaCorreta) {
-    printf("Senha correta, vamos criar seu curriculo");
+    printf("Senha correta, vamos criar seu curriculo\n");
 }
 
 else if (usuario.senhaDigitada != usuario.senhaCorreta) {
