@@ -8,7 +8,7 @@ char nome [30];
 int idade;
 char datadeNasc [30];
 char email [30];
-int numerodeTel;
+char numerodeTel [30]; 
 char cidade [30];
 char estado [30];
 char bairro [30];
@@ -40,6 +40,22 @@ printf("Data de Nascimento:%s\n",pessoa.datadeNasc);
 printf("Digite agora o seu email:\n");
 scanf("%s",&pessoa.email);
 printf("Email: %s\n",pessoa.email);
+getchar();
+printf("\nAgora por favor digite seu número de telefone:\n");
+fgets(pessoa.numerodeTel, 30, stdin);
+printf("Número de Telefone: %s",pessoa.numerodeTel);
+printf("Agora por favor , digite sua cidade:\n");
+fgets(pessoa.cidade, 30, stdin);
+printf("Cidade:%s",pessoa.cidade);
+printf("Por favor digite seu estado:\n");
+fgets(pessoa.estado, 30, stdin);
+printf("Estado: %s",pessoa.estado);
+printf("Digite seu bairro:\n");
+fgets(pessoa.bairro, 30, stdin);
+printf("Bairro: %s",pessoa.bairro);
+printf("Agora por favor digite o nome de um lugar que já trabalhou:\n");
+fgets(pessoa.referenceTrabalho, 30, stdin);
+printf("Referencia de trabalho: %s",pessoa.referenceTrabalho);
 
 
 
