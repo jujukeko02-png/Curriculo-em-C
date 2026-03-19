@@ -24,7 +24,12 @@ if (a <= b)   // menor ou igual
 */
 
 
-
+struct Login {
+  // Váriaveis de login
+  
+  int senhaCorreta;
+  int senhaDigitada;
+};
 
 struct Curriculo {
     
@@ -47,12 +52,26 @@ char moreSobre [30];
 int main()
 {
 
+struct Login usuario;
+usuario.senhaCorreta = 2580;
 struct Curriculo pessoa;
 
 //Pedindo informações ao usário e recebendo essas informações//
 
 
 printf("Bem Vindo (a) ao Curriculo Por linguagem C,\nSe estiver pronto (a), digite enter\n\n");
+printf("Digite sua senha de usuario:\n");
+scanf("%d",&usuario.senhaDigitada);
+if (usuario.senhaDigitada == usuario.senhaCorreta) {
+    printf("Senha correta, vamos criar seu curriculo");
+}
+
+else if (usuario.senhaDigitada != usuario.senhaCorreta) {
+    printf("Senha errada , reinicie o programa e tente novamente");
+    return 0;
+}
+
+getchar();
 printf("Por favor digite seu nome completo:\n");
 fgets(pessoa.nome, 30, stdin);
 printf("Nome completo: %s", pessoa.nome);
